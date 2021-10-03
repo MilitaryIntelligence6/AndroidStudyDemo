@@ -1,4 +1,4 @@
-package cn.misection.study.startupmode.controller;
+package cn.misection.study.launchmode.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,7 @@ import android.view.View;
 
 import cn.misection.study.R;
 
-public class StartupControllerActivity extends AppCompatActivity {
+public class LaunchControllerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

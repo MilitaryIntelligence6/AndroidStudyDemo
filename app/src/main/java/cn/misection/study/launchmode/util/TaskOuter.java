@@ -1,7 +1,6 @@
-package cn.misection.study.startupmode.util;
+package cn.misection.study.launchmode.util;
 
 import android.app.Activity;
-import android.content.Context;
 
 import cn.misection.util.oututil.system.AppSystem;
 

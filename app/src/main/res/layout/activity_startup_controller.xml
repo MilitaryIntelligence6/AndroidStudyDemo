@@ -10,7 +10,7 @@
     <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".startupmode.controller.StartupControllerActivity">
+            tools:context=".launchmode.controller.LaunchControllerActivity">
 
         <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"

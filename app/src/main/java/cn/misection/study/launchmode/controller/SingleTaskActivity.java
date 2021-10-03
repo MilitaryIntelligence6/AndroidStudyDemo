@@ -1,4 +1,4 @@
-package cn.misection.study.startupmode.controller;
+package cn.misection.study.launchmode.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 

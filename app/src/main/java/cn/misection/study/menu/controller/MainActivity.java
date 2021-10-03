@@ -8,10 +8,12 @@ import android.view.View;
 
 import cn.misection.study.R;
 import cn.misection.study.lifecycle.controller.LifeCycleActivity;
-import cn.misection.study.startupmode.controller.StartupControllerActivity;
+import cn.misection.study.launchmode.controller.LaunchControllerActivity;
 import cn.misection.study.subthreadupdateui.SubThreadUpdateUiActivity;
-import cn.misection.util.oututil.system.AppSystem;
 
+/**
+ * @author javaman
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onActivityStartupModeButtonClicked(View view) {
-        startActivity(new Intent(this, StartupControllerActivity.class));
+        startActivity(new Intent(this, LaunchControllerActivity.class));
     }
 
     public void onSubThreadUpdateUiButtonClicked(View view) {

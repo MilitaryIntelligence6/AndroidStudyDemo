@@ -14,18 +14,18 @@
                 android:exported="true" />
         <activity android:name=".subthreadupdateui.SubThreadUpdateUiActivity" />
         <activity
-                android:name=".startupmode.controller.SingleInstanceActivity"
+                android:name=".launchmode.controller.SingleInstanceActivity"
                 android:launchMode="singleInstance" />
         <activity
-                android:name=".startupmode.controller.SingleTaskActivity"
+                android:name=".launchmode.controller.SingleTaskActivity"
                 android:launchMode="singleTask" />
         <activity
-                android:name=".startupmode.controller.SingleTopActivity"
+                android:name=".launchmode.controller.SingleTopActivity"
                 android:launchMode="singleTop" />
         <activity
-                android:name=".startupmode.controller.StandardStartupActivity"
+                android:name=".launchmode.controller.StandardStartupActivity"
                 android:launchMode="standard" />
-        <activity android:name=".startupmode.controller.StartupControllerActivity" />
+        <activity android:name=".launchmode.controller.LaunchControllerActivity" />
         <activity android:name=".lifecycle.controller.UtilActivity" />
         <activity android:name=".lifecycle.controller.LifeCycleActivity" />
         <activity android:name=".menu.controller.MainActivity">
