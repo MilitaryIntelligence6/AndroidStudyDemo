@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".menu.controller.MainActivity"
+            >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/activity_lifecycle"
+                    android:onClick="onLifeCycleButtonClicked"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/activity_startup_mode_literal"
+                    android:onClick="onActivityStartupModeButtonClicked"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/sub_thread_update_ui_literal"
+                    android:onClick="onSubThreadUpdateUiButtonClicked"
+                    />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/menu_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

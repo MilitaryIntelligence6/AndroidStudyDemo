@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidStudyDemo</string>
+    <string name="activity_lifecycle">Activity 生命周期</string>
+    <string name="easy_go_to_activity">随便瞎跳个 Activity 试试</string>
+    <string name="standard_startup_literal">standard 启动</string>
+    <string name="activity_startup_mode_literal">Activity 启动模式</string>
+    <string name="single_top_startup_literal">SingleTop 启动</string>
+    <string name="single_task_startup_literal">SingleTask 启动</string>
+    <string name="single_Instance_startup_literal">SingleInstance 启动</string>
+    <string name="sub_thread_update_ui_literal">子线程更新 ui</string>
+</resources>

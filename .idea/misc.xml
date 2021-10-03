@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BspLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="D:/ProgramFile/SoftWare/Develope/Git/GitPkg/Java/math/calcEco/pkg/smile" value="PREVIEW" />
+        <entry key="D:/ProgramFile/SoftWare/Develope/Git/GitPkg/Java/math/calcEco/pkg/smile/demo" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24592391304347827" />
+      </map>
+    </option>
+  </component>
+  <component name="FindBugsConfigurable">
+    <option name="make" value="true" />
+    <option name="effort" value="default" />
+    <option name="priority" value="Medium" />
+    <option name="excludeFilter" value="" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\ProgramFile\SoftWare\Develope\Java\Maven\MvnLocalRepository\pkg" />
+        <option name="mavenHome" value="D:\ProgramFile\SoftWare\Develope\Java\IDEA\IDEA2020\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="D:\ProgramFile\SoftWare\Develope\Java\Maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="ScalaSbtSettings">
+    <option name="customLauncherEnabled" value="true" />
+    <option name="customLauncherPath" value="D:\ProgramFile\SoftWare\Develope\Java\JVMLang\Scala\Sbt\sbt\bin\sbt-launch.jar" />
+    <option name="customVMPath" />
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
+  </component>
+</project>
