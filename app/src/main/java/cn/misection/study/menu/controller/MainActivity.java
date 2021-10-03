@@ -54,18 +54,4 @@ public class MainActivity extends AppCompatActivity {
         mBinding.menuRecycleView.setLayoutManager(linearLayoutManager);
         mBinding.menuRecycleView.setAdapter(studyItemAdapter);
     }
-
-
-    public void onLifeCycleButtonClicked(View view) {
-//        AppSystem.out.printt(this, "跳转至生命周期页面");
-        startActivity(new Intent(this, LifeCycleActivity.class));
-    }
-
-    public void onActivityStartupModeButtonClicked(View view) {
-        startActivity(new Intent(this, LaunchControllerActivity.class));
-    }
-
-    public void onSubThreadUpdateUiButtonClicked(View view) {
-        startActivity(new Intent(this, SubThreadUpdateUiActivity.class));
-    }
 }
