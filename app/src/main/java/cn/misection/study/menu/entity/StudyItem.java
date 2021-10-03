@@ -43,4 +43,8 @@ public enum StudyItem {
     public Class<? extends AppCompatActivity> getActivityClass() {
         return activityClass;
     }
+
+    public static int count() {
+        return values().length;
+    }
 }

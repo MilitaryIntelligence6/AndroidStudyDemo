@@ -1,5 +1,8 @@
 package cn.misection.study.menu.adapter;
 
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import cn.misection.study.BuildConfig;
 import cn.misection.study.R;
 import cn.misection.study.menu.entity.StudyItem;
 
@@ -22,9 +26,12 @@ import cn.misection.study.menu.entity.StudyItem;
  */
 public class StudyItemAdapter extends RecyclerView.Adapter<StudyItemAdapter.ViewHolder> {
 
+    private final Context mContext;
+
     private final List<StudyItem> mStudyItemList;
 
-    public StudyItemAdapter(List<StudyItem> studyItemList) {
+    public StudyItemAdapter(Context context, List<StudyItem> studyItemList) {
+        this.mContext = context;
         this.mStudyItemList = studyItemList;
     }
 
@@ -39,6 +46,12 @@ public class StudyItemAdapter extends RecyclerView.Adapter<StudyItemAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         StudyItem studyItem = mStudyItemList.get(position);
         holder.getStudyTitleTextView().setText(studyItem.getTitle());
+        holder.itemView.setOnClickListener(v -> {
+            mContext.startActivity(new Intent(
+                    mContext,
+                    studyItem.getActivityClass())
+            );
+        });
     }
 
     @Override

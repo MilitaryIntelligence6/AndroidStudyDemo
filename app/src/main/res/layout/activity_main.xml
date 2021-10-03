@@ -39,12 +39,12 @@
                     android:onClick="onSubThreadUpdateUiButtonClicked"
                     />
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/menu_recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/menu_recycle_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.core.widget.NestedScrollView>
 </layout>

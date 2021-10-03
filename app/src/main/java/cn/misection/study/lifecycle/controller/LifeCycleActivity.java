@@ -18,43 +18,43 @@ public class LifeCycleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life_cycle);
-        printt("LifeCycleActivity.onCreate");
+        printt("LifeCycleActivity::onCreate");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        printt("LifeCycleActivity.onRestart");
+        printt("LifeCycleActivity::onRestart");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        printt("LifeCycleActivity.onStart");
+        printt("LifeCycleActivity::onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        printt("LifeCycleActivity.onResume");
+        printt("LifeCycleActivity::onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        printt("LifeCycleActivity.onPause");
+        printt("LifeCycleActivity::onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        printt("LifeCycleActivity.onStop");
+        printt("LifeCycleActivity::onStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        printt("LifeCycleActivity.onDestroy");
+        printt("LifeCycleActivity::onDestroy");
     }
 
     private void printt(String msg) {
