@@ -16,6 +16,8 @@ allprojects {
     repositories {
         google()
         jcenter()
+        // XUI;
+        maven { url "https://jitpack.io" }
     }
 }
 
