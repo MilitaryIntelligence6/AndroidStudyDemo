@@ -1,4 +1,4 @@
-package cn.misection.study.handler;
+package cn.misection.study.handler.controller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,15 +9,11 @@ import android.os.Message;
 import android.util.Log;
 
 import java.lang.ref.WeakReference;
-import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import cn.misection.study.R;
-import cn.misection.util.oututil.system.AppSystem;
 
 /**
  * @author javaman

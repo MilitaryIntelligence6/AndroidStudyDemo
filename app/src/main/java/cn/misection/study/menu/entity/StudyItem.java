@@ -2,7 +2,7 @@ package cn.misection.study.menu.entity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import cn.misection.study.handler.HandlerActivity;
+import cn.misection.study.handler.controller.HandlerActivity;
 import cn.misection.study.launchmode.controller.LaunchControllerActivity;
 import cn.misection.study.lifecycle.controller.LifeCycleActivity;
 import cn.misection.study.subthreadupdateui.SubThreadUpdateUiActivity;
