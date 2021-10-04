@@ -14,6 +14,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import cn.misection.study.R;
+import cn.misection.util.oututil.system.AppSystem;
 
 /**
  * @author javaman
@@ -30,6 +31,13 @@ public class HandlerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handler);
+        init();
+    }
+
+    @Override
+    protected void onDestroy() {
+        mPool.shutdown();
+        super.onDestroy();
     }
 
     private void init() {
@@ -57,7 +65,7 @@ public class HandlerActivity extends AppCompatActivity {
 
     private static class MyHandler extends Handler {
 
-        private WeakReference<HandlerActivity> mActivityRef;
+        private final WeakReference<HandlerActivity> mActivityRef;
 
         public MyHandler(HandlerActivity activity) {
             mActivityRef = new WeakReference<>(activity);
@@ -67,6 +75,9 @@ public class HandlerActivity extends AppCompatActivity {
         @Override
         public void handleMessage(@NonNull Message msg) {
             Log.e(TAG, String.valueOf(msg.what));
+            if (mActivityRef.get() != null) {
+                AppSystem.out.printt(mActivityRef.get(), String.format("hello, msg.getWhat() == %d", msg.what));
+            }
         }
     }
 }
