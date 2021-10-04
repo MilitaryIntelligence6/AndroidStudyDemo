@@ -63,6 +63,6 @@ public class LifeCycleActivity extends AppCompatActivity {
 
     public void onEasyGoToActivityButtonClicked(View view) {
         AppSystem.out.printt(this, "跳转到 util Activity");
-        startActivity(new Intent(this, UtilActivity.class));
+        startActivity(new Intent(this, UtilManActivity.class));
     }
 }

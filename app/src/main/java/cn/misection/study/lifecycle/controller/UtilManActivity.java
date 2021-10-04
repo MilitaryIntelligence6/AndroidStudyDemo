@@ -6,11 +6,15 @@ import android.os.Bundle;
 
 import cn.misection.study.R;
 
-public class UtilActivity extends AppCompatActivity {
+/**
+ * @author javaman
+ * 工具人 Activity;
+ */
+public class UtilManActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_util);
+        setContentView(R.layout.activity_util_man);
     }
 }

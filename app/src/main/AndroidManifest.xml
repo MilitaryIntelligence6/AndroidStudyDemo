@@ -26,7 +26,7 @@
                 android:name=".launchmode.controller.StandardStartupActivity"
                 android:launchMode="standard" />
         <activity android:name=".launchmode.controller.LaunchControllerActivity" />
-        <activity android:name=".lifecycle.controller.UtilActivity" />
+        <activity android:name=".lifecycle.controller.UtilManActivity" />
         <activity android:name=".lifecycle.controller.LifeCycleActivity" />
         <activity android:name=".menu.controller.MainActivity">
             <intent-filter>
