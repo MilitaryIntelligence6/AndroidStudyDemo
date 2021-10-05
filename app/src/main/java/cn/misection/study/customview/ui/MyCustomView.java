@@ -71,11 +71,6 @@ public class MyCustomView extends View {
     }
 
     private int calcMySize(int measureSpec) {
-        if (BuildConfig.DEBUG) {
-            Log.d(MyCustomView.class.getName(), String.format("measureSpec == %d", measureSpec));
-            Log.d(MyCustomView.class.getName(), String.format("measureSpec.mode == %d", MeasureSpec.getMode(measureSpec)));
-            Log.d(MyCustomView.class.getName(), String.format("measureSpec.size == %d", MeasureSpec.getSize(measureSpec)));
-        }
         // 测量模式;
         switch (MeasureSpec.getMode(measureSpec)) {
             case MeasureSpec.UNSPECIFIED:

@@ -1,20 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--自定义 view 不要用父 constra 包裹, 否则会拉变形-->
-<androidx.appcompat.widget.LinearLayoutCompat
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?><!--自定义 view 不要用父 constra 包裹, 否则会拉变形-->
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:misection="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".customview.controller.MyCustomViewActivity"
-        >
+        android:orientation="vertical">
 
     <cn.misection.study.customview.ui.MyCustomView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@color/xui_config_color_red"
-            misection:default_size="200dp"
-            />
+            misection:default_size="200dp" />
+
+    <cn.misection.study.customview.ui.MyCustomViewGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/xui_config_color_pure_yellow">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+
+    </cn.misection.study.customview.ui.MyCustomViewGroup>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

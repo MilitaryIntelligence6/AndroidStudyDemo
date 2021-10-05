@@ -61,7 +61,8 @@ public class MyCustomViewGroup extends ViewGroup {
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        int curHeight = t;
+        // 起始 height 必须为 0, 因为 传入的 t 是 ViewGroup 在父容器中的高度, 子元素相对高度从 0 开算;
+        int curHeight = 0;
         for (int i = 0, childCount = getChildCount(); i < childCount; i++) {
             View child = getChildAt(i);
             int childWidth = child.getMeasuredWidth();
