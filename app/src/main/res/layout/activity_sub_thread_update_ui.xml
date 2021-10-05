@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context="cn.misection.study.subthreadupdateui.SubThreadUpdateUiActivity">
+            tools:context="cn.misection.study.subthreadupdateui.controller.SubThreadUpdateUiActivity">
 
         <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/sub_thread_update_ui_tv"

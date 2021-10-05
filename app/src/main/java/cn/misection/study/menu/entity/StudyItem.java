@@ -6,7 +6,7 @@ import cn.misection.study.customview.controller.MyCustomViewActivity;
 import cn.misection.study.handler.controller.HandlerActivity;
 import cn.misection.study.launchmode.controller.LaunchControllerActivity;
 import cn.misection.study.lifecycle.controller.LifeCycleActivity;
-import cn.misection.study.subthreadupdateui.SubThreadUpdateUiActivity;
+import cn.misection.study.subthreadupdateui.controller.SubThreadUpdateUiActivity;
 
 /**
  * @author Military Intelligence 6 root

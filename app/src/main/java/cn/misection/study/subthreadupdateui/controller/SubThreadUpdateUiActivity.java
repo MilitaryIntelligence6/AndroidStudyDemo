@@ -1,4 +1,4 @@
-package cn.misection.study.subthreadupdateui;
+package cn.misection.study.subthreadupdateui.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;

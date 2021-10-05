@@ -15,7 +15,7 @@
         <activity
                 android:name=".handler.controller.HandlerActivity"
                 android:exported="true" />
-        <activity android:name=".subthreadupdateui.SubThreadUpdateUiActivity" />
+        <activity android:name=".subthreadupdateui.controller.SubThreadUpdateUiActivity" />
         <activity
                 android:name=".launchmode.controller.SingleInstanceActivity"
                 android:launchMode="singleInstance" />

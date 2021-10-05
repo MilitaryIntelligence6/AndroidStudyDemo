@@ -4,23 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
 
-import cn.misection.study.BuildConfig;
 import cn.misection.study.R;
 import cn.misection.study.databinding.ActivityMainBinding;
-import cn.misection.study.lifecycle.controller.LifeCycleActivity;
-import cn.misection.study.launchmode.controller.LaunchControllerActivity;
 import cn.misection.study.menu.adapter.StudyItemAdapter;
 import cn.misection.study.menu.entity.StudyItem;
-import cn.misection.study.subthreadupdateui.SubThreadUpdateUiActivity;
 import cn.misection.util.oututil.system.AppSystem;
 
 /**
