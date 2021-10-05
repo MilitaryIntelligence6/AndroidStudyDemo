@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自定义 view 不要用父 constra 包裹, 否则会拉变形-->
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:misection="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".customview.controller.MyCustomViewActivity"
+        >
+
+    <cn.misection.study.customview.ui.MyCustomView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/xui_config_color_red"
+            misection:default_size="200dp"
+            />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

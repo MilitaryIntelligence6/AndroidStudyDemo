@@ -2,6 +2,7 @@ package cn.misection.study.menu.entity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import cn.misection.study.customview.controller.MyCustomViewActivity;
 import cn.misection.study.handler.controller.HandlerActivity;
 import cn.misection.study.launchmode.controller.LaunchControllerActivity;
 import cn.misection.study.lifecycle.controller.LifeCycleActivity;
@@ -26,6 +27,8 @@ public enum StudyItem {
     SUB_THREAD_UPDATE_UI("子线程更新 UI", SubThreadUpdateUiActivity.class),
 
     HANDLER("handler", HandlerActivity.class),
+
+    CUSTOM_VIEW("自定义 view", MyCustomViewActivity.class),
     ;
     private final String title;
 

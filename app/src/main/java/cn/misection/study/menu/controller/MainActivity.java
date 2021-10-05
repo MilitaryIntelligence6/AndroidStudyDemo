@@ -21,11 +21,14 @@ import cn.misection.study.launchmode.controller.LaunchControllerActivity;
 import cn.misection.study.menu.adapter.StudyItemAdapter;
 import cn.misection.study.menu.entity.StudyItem;
 import cn.misection.study.subthreadupdateui.SubThreadUpdateUiActivity;
+import cn.misection.util.oututil.system.AppSystem;
 
 /**
  * @author javaman
  */
 public class MainActivity extends AppCompatActivity {
+
+    private long mLastExitTime;
 
     private ActivityMainBinding mBinding;
 
@@ -53,5 +56,16 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         mBinding.menuRecycleView.setLayoutManager(linearLayoutManager);
         mBinding.menuRecycleView.setAdapter(studyItemAdapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+        long currentTimeMillis = System.currentTimeMillis();
+        if (currentTimeMillis - mLastExitTime > 2000) {
+            AppSystem.out.printt(this, "再按一次退出程序");
+            mLastExitTime = currentTimeMillis;
+        } else {
+            super.onBackPressed();
+        }
     }
 }

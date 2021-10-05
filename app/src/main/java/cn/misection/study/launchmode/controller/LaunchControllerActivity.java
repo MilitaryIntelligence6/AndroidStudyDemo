@@ -13,11 +13,11 @@ public class LaunchControllerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_startup_controller);
+        setContentView(R.layout.activity_launch_controller);
     }
 
     public void onStandardStartupButtonClicked(View view) {
-        startActivity(new Intent(this, StandardStartupActivity.class));
+        startActivity(new Intent(this, StandardActivity.class));
     }
 
     public void onSingleTopStartupButtonClicked(View view) {

@@ -10,7 +10,7 @@
     <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".launchmode.controller.StandardStartupActivity">
+            tools:context=".launchmode.controller.StandardActivity">
 
     </androidx.core.widget.NestedScrollView>
 </layout>

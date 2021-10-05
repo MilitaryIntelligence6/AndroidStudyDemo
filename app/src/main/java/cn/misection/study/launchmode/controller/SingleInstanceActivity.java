@@ -6,6 +6,9 @@ import android.os.Bundle;
 
 import cn.misection.study.R;
 
+/**
+ * @author javaman
+ */
 public class SingleInstanceActivity extends AppCompatActivity {
 
     @Override

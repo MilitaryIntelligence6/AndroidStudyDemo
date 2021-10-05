@@ -10,6 +10,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AndroidStudyDemo">
         <activity
+                android:name=".customview.controller.MyCustomViewActivity"
+                android:exported="true" />
+        <activity
                 android:name=".handler.controller.HandlerActivity"
                 android:exported="true" />
         <activity android:name=".subthreadupdateui.SubThreadUpdateUiActivity" />
@@ -23,7 +26,7 @@
                 android:name=".launchmode.controller.SingleTopActivity"
                 android:launchMode="singleTop" />
         <activity
-                android:name=".launchmode.controller.StandardStartupActivity"
+                android:name=".launchmode.controller.StandardActivity"
                 android:launchMode="standard" />
         <activity android:name=".launchmode.controller.LaunchControllerActivity" />
         <activity android:name=".lifecycle.controller.UtilManActivity" />

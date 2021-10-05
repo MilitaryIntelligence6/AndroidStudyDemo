@@ -1,4 +1,4 @@
-package cn.misection.study.menu.adapter;
+package cn.misection.study.launchmode.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import cn.misection.study.R;
+import cn.misection.study.launchmode.entity.LaunchMode;
 import cn.misection.study.menu.entity.StudyItem;
 
 /**
@@ -22,15 +23,15 @@ import cn.misection.study.menu.entity.StudyItem;
  * @Description TODO
  * @CreateTime 2021年10月03日 21:14:00
  */
-public class StudyItemAdapter extends RecyclerView.Adapter<StudyItemAdapter.ViewHolder> {
+public class LaunchModeAdapter extends RecyclerView.Adapter<LaunchModeAdapter.ViewHolder> {
 
     private final Context mContext;
 
-    private final List<StudyItem> mStudyItemList;
+    private final List<LaunchMode> mLaunchModeList;
 
-    public StudyItemAdapter(Context context, List<StudyItem> studyItemList) {
-        this.mContext = context;
-        this.mStudyItemList = studyItemList;
+    public LaunchModeAdapter(Context mContext, List<LaunchMode> mLaunchModeList) {
+        this.mContext = mContext;
+        this.mLaunchModeList = mLaunchModeList;
     }
 
     @NonNull
@@ -42,20 +43,19 @@ public class StudyItemAdapter extends RecyclerView.Adapter<StudyItemAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        StudyItem studyItem = mStudyItemList.get(position);
-        holder.getStudyTitleTextView().setText(studyItem.getTitle());
+        LaunchMode launchMode = mLaunchModeList.get(position);
+        holder.getStudyTitleTextView().setText(launchMode.getTitle());
         holder.itemView.setOnClickListener(v -> {
             mContext.startActivity(new Intent(
                     mContext,
-                    studyItem.getActivityClass()
-                    )
+                    launchMode.getActivityClass())
             );
         });
     }
 
     @Override
     public int getItemCount() {
-        return mStudyItemList.size();
+        return mLaunchModeList.size();
     }
 
     protected static class ViewHolder extends RecyclerView.ViewHolder {
